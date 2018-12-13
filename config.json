@@ -1,0 +1,39 @@
+{
+
+  // Output file is placed in the source directory with this name.
+  "output_file": "interleaved.raw",
+
+  // Directory storing all channel audio source files.
+  "source_dir": "/path/to/flac_sources/",
+
+  // Extension of all channel audio source files, without dot.
+  "source_ext": "wav",
+
+  // Dictionary mapping channel names to source names. Expects the name of each
+  // file without base dir or extension. The specified channel configuration
+  // must be a valid FLAC format channel configuration. Each source must contain
+  // exactly one channel of audio.
+  // Valid channel names are:
+  //   fl   -- front left
+  //   fr   -- front right
+  //   c    -- front center
+  //   lfe  -- low frequency effects
+  //   bl   -- back left
+  //   br   -- back right
+  //   sl   -- side left
+  //   sr   -- side right
+  //   bc   -- back center
+  //   mono -- single channel audio
+  "sources": {
+
+    "fl": "fl",
+    "fr": "fr",
+    "c": "c",
+    "lfe": "lfe",
+    "bl": "bl",
+    "br": "br",
+    "sl": "sl",
+    "sr": "sr"
+  }
+
+}
